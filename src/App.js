@@ -13,6 +13,7 @@ class App extends Component {
   componentDidMount() {
     const urls = [
       'https://swapi.co/api/people/'
+      // 'https://swapi.co/api/vehicles/'
     ];
 
     Promise.all(urls.map(url => {
@@ -28,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className='appBackground tc'>
-        <div className='f2 b bg-gold'>Star Wars</div>
+        <h1 className='f2 b bg-gold'>Star Wars</h1>
         <CardGrid list={this.state.people}/>
       </div>
     );
