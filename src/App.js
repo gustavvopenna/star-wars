@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className='appBackground tc'>
-        <h1 className='f2 b bg-gold'>Star Wars</h1>
+        <h1 className='f-1 b bg-gold'>Star Wars</h1>
         <CardGrid list={this.state.people}/>
       </div>
     );
