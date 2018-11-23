@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardGrid from './CardGrid';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -26,8 +27,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className='tc'>
-        <h1>Star Wars</h1>
+      <div className='appBackground tc'>
+        <div className='f2 b bg-gold'>Star Wars</div>
         <CardGrid list={this.state.people}/>
       </div>
     );
